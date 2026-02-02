@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
+import joinusIllustration from "@/assets/joinus-illustration.jpg";
 
 const JoinUs = () => {
   return (
@@ -11,6 +12,17 @@ const JoinUs = () => {
             title="Join us"
             description="Building campus mobility, one university at a time."
             centered
+          />
+        </div>
+      </section>
+
+      {/* Illustration divider */}
+      <section className="container-wide py-12">
+        <div className="illustration-container max-w-4xl mx-auto">
+          <img
+            src={joinusIllustration}
+            alt="Team collaboration"
+            className="w-full h-auto rounded-2xl"
           />
         </div>
       </section>

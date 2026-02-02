@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
+import investorIllustration from "@/assets/investor-illustration.jpg";
 
 const InvestorRelations = () => {
   return (
@@ -11,6 +12,17 @@ const InvestorRelations = () => {
             title="Investor Relations"
             description="Corporate and investor-related information."
             centered
+          />
+        </div>
+      </section>
+
+      {/* Illustration divider */}
+      <section className="container-wide py-12">
+        <div className="illustration-container max-w-4xl mx-auto">
+          <img
+            src={investorIllustration}
+            alt="Corporate overview"
+            className="w-full h-auto rounded-2xl"
           />
         </div>
       </section>
