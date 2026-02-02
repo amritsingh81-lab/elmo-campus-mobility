@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
+import pricingIllustration from "@/assets/pricing-illustration.jpg";
 
 const Pricing = () => {
   return (
@@ -11,6 +12,17 @@ const Pricing = () => {
             title="Pricing"
             description="Simple, transparent access to campus mobility. Here's how it works."
             centered
+          />
+        </div>
+      </section>
+
+      {/* Illustration divider */}
+      <section className="container-wide py-12">
+        <div className="illustration-container max-w-4xl mx-auto">
+          <img
+            src={pricingIllustration}
+            alt="Pricing concept"
+            className="w-full h-auto rounded-2xl"
           />
         </div>
       </section>

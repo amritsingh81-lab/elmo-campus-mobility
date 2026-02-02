@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
 import { Mail } from "lucide-react";
+import pressIllustration from "@/assets/press-illustration.jpg";
 
 const Press = () => {
   return (
@@ -12,6 +13,17 @@ const Press = () => {
             title="Press"
             description="Updates, announcements, and information for media."
             centered
+          />
+        </div>
+      </section>
+
+      {/* Illustration divider */}
+      <section className="container-wide py-12">
+        <div className="illustration-container max-w-4xl mx-auto">
+          <img
+            src={pressIllustration}
+            alt="Press and communication"
+            className="w-full h-auto rounded-2xl"
           />
         </div>
       </section>
