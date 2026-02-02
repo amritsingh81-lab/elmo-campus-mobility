@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import logoElmo from "@/assets/logo-elmo.png";
 
 const navLinks = [
+  { name: "About", path: "/about" },
   { name: "Students", path: "/students" },
   { name: "Universities", path: "/universities" },
   { name: "How it works", path: "/how-it-works" },
