@@ -4,10 +4,11 @@ import { Menu, X } from "lucide-react";
 import logoElmo from "@/assets/logo-elmo.png";
 
 const navLinks = [
-  { name: "About", path: "/about" },
+  { name: "Home", path: "/" },
+  { name: "How it Works", path: "/how-it-works" },
   { name: "Students", path: "/students" },
   { name: "Universities", path: "/universities" },
-  { name: "How it works", path: "/how-it-works" },
+  { name: "About us", path: "/about" },
   { name: "Contact", path: "/contact" },
 ];
 
@@ -15,7 +16,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) => {
+    if (path === "/") return location.pathname === "/";
+    return location.pathname === path;
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">

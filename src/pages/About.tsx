@@ -10,10 +10,10 @@ const About = () => {
       <section className="hero-gradient section-padding">
         <div className="container-narrow text-center">
           <span className="text-primary font-medium text-sm uppercase tracking-wider mb-4 block animate-fade-in">
-            About Elmo
+            About us
           </span>
           <h1 className="text-display mb-8 animate-slide-up">
-            A shared electric scooter service designed for campuses
+            About us
           </h1>
           <p className="text-body-large max-w-2xl mx-auto animate-slide-up delay-100">
             Elmo operates shared electric scooters exclusively on university campuses in India. 

@@ -15,7 +15,7 @@ const HowItWorks = () => {
             How it works
           </span>
           <h1 className="text-display mb-6 animate-slide-up">
-            Simple, seamless, sustainable
+            How it Works
           </h1>
           <p className="text-body-large max-w-2xl mx-auto animate-slide-up delay-100">
             Getting started with Elmo takes just minutes. Here's everything you need 
