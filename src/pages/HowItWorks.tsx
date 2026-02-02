@@ -1,6 +1,7 @@
 import { Smartphone, QrCode, Navigation, ParkingCircle } from "lucide-react";
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
+import AppStoreButtons from "@/components/AppStoreButtons";
 import appIllustration from "@/assets/app-illustration.jpg";
 import heroIllustration from "@/assets/hero-illustration.jpg";
 
@@ -39,11 +40,12 @@ const HowItWorks = () => {
                 Start by downloading the Elmo app on your smartphone. Create an account 
                 using your university email, verify your identity, and you're ready to ride.
               </p>
-              <ul className="space-y-3 text-body text-muted-foreground">
+              <ul className="space-y-3 text-body text-muted-foreground mb-6">
                 <li>• Available on iOS and Android</li>
                 <li>• University email verification required</li>
                 <li>• Set up payment method once</li>
               </ul>
+              <AppStoreButtons />
             </div>
             <div className="max-w-sm mx-auto lg:mx-0 lg:ml-auto">
               <img
