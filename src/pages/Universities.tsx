@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Leaf, Users, Wrench, BarChart, CheckCircle } from "lucide-react";
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
-import universitiesIllustration from "@/assets/universities-illustration.jpg";
+import universityBuildingIllustration from "@/assets/university-building-illustration.jpg";
 
 const Universities = () => {
   return (
@@ -29,7 +29,7 @@ const Universities = () => {
             <div className="animate-slide-up delay-200">
               <div className="illustration-container">
                 <img
-                  src={universitiesIllustration}
+                  src={universityBuildingIllustration}
                   alt="University campus with Elmo scooters"
                   className="w-full h-auto"
                 />

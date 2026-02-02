@@ -3,7 +3,9 @@ import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
 import AppStoreButtons from "@/components/AppStoreButtons";
 import appIllustration from "@/assets/app-illustration.jpg";
-import heroIllustration from "@/assets/hero-illustration.jpg";
+import mapIllustration from "@/assets/map-illustration.jpg";
+import ridingIllustration from "@/assets/riding-illustration.jpg";
+import parkingIllustration from "@/assets/parking-illustration.jpg";
 
 const HowItWorks = () => {
   return (
@@ -65,8 +67,8 @@ const HowItWorks = () => {
             <div className="order-2 lg:order-1">
               <div className="illustration-container">
                 <img
-                  src={heroIllustration}
-                  alt="Finding scooters on campus"
+                  src={mapIllustration}
+                  alt="Finding scooters on campus map"
                   className="w-full h-auto"
                 />
               </div>
