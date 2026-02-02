@@ -1,7 +1,7 @@
 import { Building2, Leaf, Shield, XCircle } from "lucide-react";
 import Layout from "@/components/Layout";
-import heroIllustration from "@/assets/hero-illustration.jpg";
-import studentsIllustration from "@/assets/students-illustration.jpg";
+import aboutCampusIllustration from "@/assets/about-campus-illustration.jpg";
+import partnershipIllustration from "@/assets/partnership-illustration.jpg";
 
 const About = () => {
   return (
@@ -27,7 +27,7 @@ const About = () => {
       <section className="container-wide py-12">
         <div className="illustration-container max-w-4xl mx-auto">
           <img
-            src={heroIllustration}
+            src={aboutCampusIllustration}
             alt="Campus mobility"
             className="w-full h-auto"
           />
@@ -109,7 +109,7 @@ const About = () => {
             </div>
             <div className="illustration-container">
               <img
-                src={studentsIllustration}
+                src={partnershipIllustration}
                 alt="Campus environment"
                 className="w-full h-auto"
               />
