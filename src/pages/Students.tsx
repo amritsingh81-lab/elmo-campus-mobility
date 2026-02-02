@@ -1,6 +1,7 @@
 import { Shield, Smartphone, MapPin, Clock, CheckCircle } from "lucide-react";
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
+import AppStoreButtons from "@/components/AppStoreButtons";
 import studentsIllustration from "@/assets/students-illustration.jpg";
 import appIllustration from "@/assets/app-illustration.jpg";
 
@@ -115,6 +116,9 @@ const Students = () => {
                   <span className="text-body">Easy digital payments, no cash needed</span>
                 </li>
               </ul>
+              <div className="mt-6">
+                <AppStoreButtons />
+              </div>
             </div>
           </div>
         </div>
