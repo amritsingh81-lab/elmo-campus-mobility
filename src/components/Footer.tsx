@@ -6,10 +6,14 @@ const footerLinks = {
     { name: "How it Works", path: "/how-it-works" },
     { name: "Students", path: "/students" },
     { name: "Universities", path: "/universities" },
+    { name: "Pricing", path: "/pricing" },
   ],
   company: [
     { name: "About us", path: "/about" },
     { name: "Contact", path: "/contact" },
+    { name: "Press", path: "/press" },
+    { name: "Join us", path: "/join-us" },
+    { name: "Investor Relations", path: "/investor-relations" },
   ],
 };
 
