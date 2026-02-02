@@ -3,10 +3,8 @@ import { ArrowRight, Leaf, Users, Wrench, BarChart, CheckCircle } from "lucide-r
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
 import universityBuildingIllustration from "@/assets/university-building-illustration.jpg";
-
 const Universities = () => {
-  return (
-    <Layout>
+  return <Layout>
       {/* Hero Section */}
       <section className="hero-gradient section-padding">
         <div className="container-wide">
@@ -28,11 +26,7 @@ const Universities = () => {
             </div>
             <div className="animate-slide-up delay-200">
               <div className="illustration-container">
-                <img
-                  src={universityBuildingIllustration}
-                  alt="University campus with Elmo scooters"
-                  className="w-full h-auto"
-                />
+                <img alt="University campus with Elmo scooters" className="w-full h-auto" src="/lovable-uploads/f9e85688-bfab-480a-9222-5ebcd4747e2c.png" />
               </div>
             </div>
           </div>
@@ -42,11 +36,7 @@ const Universities = () => {
       {/* Why Campus Mobility Section */}
       <section className="section-padding">
         <div className="container-narrow">
-          <SectionHeader
-            eyebrow="The opportunity"
-            title="Why campus mobility matters"
-            centered
-          />
+          <SectionHeader eyebrow="The opportunity" title="Why campus mobility matters" centered />
           <p className="text-body-large text-center max-w-2xl mx-auto mb-12">
             Large university campuses present unique mobility challenges. Students walk long 
             distances, internal vehicle traffic creates congestion, and traditional transport 
@@ -87,11 +77,7 @@ const Universities = () => {
       {/* Our Approach Section */}
       <section className="section-padding bg-card">
         <div className="container-wide">
-          <SectionHeader
-            eyebrow="Our approach"
-            title="Pilot-first, partnership-driven"
-            description="We believe in starting small and proving value. Elmo works closely with university administration to design a controlled rollout that fits your campus."
-          />
+          <SectionHeader eyebrow="Our approach" title="Pilot-first, partnership-driven" description="We believe in starting small and proving value. Elmo works closely with university administration to design a controlled rollout that fits your campus." />
           <div className="grid md:grid-cols-2 gap-8">
             <div className="card-elevated">
               <h3 className="text-title mb-4">Controlled rollout</h3>
@@ -142,11 +128,7 @@ const Universities = () => {
       {/* Benefits Section */}
       <section className="section-padding">
         <div className="container-wide">
-          <SectionHeader
-            eyebrow="Benefits"
-            title="What Elmo brings to your campus"
-            centered
-          />
+          <SectionHeader eyebrow="Benefits" title="What Elmo brings to your campus" centered />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="card-bordered">
               <Leaf className="text-primary mb-4" size={28} />
@@ -193,8 +175,6 @@ const Universities = () => {
           </Link>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Universities;
