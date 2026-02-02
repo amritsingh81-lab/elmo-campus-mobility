@@ -1,5 +1,6 @@
 import { Smartphone, MapPin, CheckCircle } from "lucide-react";
 import Layout from "@/components/Layout";
+import appIllustration from "@/assets/app-illustration.jpg";
 
 const HowItWorks = () => {
   const steps = [
@@ -47,8 +48,21 @@ const HowItWorks = () => {
         </div>
       </section>
 
+      {/* App Preview */}
+      <section className="container-wide py-12">
+        <div className="max-w-xs mx-auto animate-scale-in">
+          <div className="illustration-container">
+            <img
+              src={appIllustration}
+              alt="Elmo app preview"
+              className="w-full h-auto rounded-2xl"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* 3-Step Process Block */}
-      <section className="section-padding">
+      <section className="section-padding-sm">
         <div className="container-wide">
           <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
             {steps.map((step, index) => (
