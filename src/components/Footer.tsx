@@ -3,12 +3,12 @@ import logoElmo from "@/assets/logo-elmo.png";
 
 const footerLinks = {
   explore: [
+    { name: "How it Works", path: "/how-it-works" },
     { name: "Students", path: "/students" },
     { name: "Universities", path: "/universities" },
-    { name: "How it works", path: "/how-it-works" },
   ],
   company: [
-    { name: "About", path: "/about" },
+    { name: "About us", path: "/about" },
     { name: "Contact", path: "/contact" },
   ],
 };
