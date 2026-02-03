@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
-import pricingIllustration from "@/assets/pricing-illustration.jpg";
+import { Zap, Ticket } from "lucide-react";
 
 const Pricing = () => {
   return (
@@ -10,56 +10,45 @@ const Pricing = () => {
         <div className="container-wide">
           <SectionHeader
             title="Pricing"
-            description="Simple, transparent access to campus mobility. Here's how it works."
+            description="Simple, transparent access to campus mobility. Choose what works for you."
             centered
           />
         </div>
       </section>
 
-      {/* Illustration divider */}
-      <section className="container-wide py-12">
-        <div className="illustration-container max-w-4xl mx-auto">
-          <img
-            src={pricingIllustration}
-            alt="Pricing concept"
-            className="w-full h-auto rounded-2xl"
-          />
-        </div>
-      </section>
-
-      {/* How Pricing Works */}
-      <section className="section-padding-sm bg-muted/30">
+      {/* Pricing Cards */}
+      <section className="section-padding-sm bg-primary/10">
         <div className="container-narrow">
-          <h2 className="text-headline-sm mb-6">How pricing works</h2>
-          <p className="text-body-large text-muted-foreground mb-4">
-            Elmo operates on a straightforward pricing model designed for everyday campus use. 
-            Whether you need a quick ride across campus or regular access throughout the day, 
-            our pricing adapts to how you move.
-          </p>
-          <p className="text-body text-muted-foreground">
-            All rides are paid through the Elmo app. You'll always see the applicable rate 
-            before starting a ride, so there are no surprises.
-          </p>
-        </div>
-      </section>
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+            {/* Pay As You Go Card */}
+            <div className="bg-card rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                <Zap className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-title mb-3">Pay As You Go</h3>
+              <p className="text-body text-muted-foreground">
+                Pay per ride with a small unlock fee plus a per-minute rate. 
+                Perfect for occasional trips across campus.
+              </p>
+            </div>
 
-      {/* Flexible Access */}
-      <section className="section-padding-sm bg-background">
-        <div className="container-narrow">
-          <h2 className="text-headline-sm mb-6">Flexible access on campus</h2>
-          <p className="text-body-large text-muted-foreground mb-4">
-            Choose the option that fits your routine. Single rides are available for occasional 
-            trips, while ride passes offer convenient access for more frequent use.
-          </p>
-          <p className="text-body text-muted-foreground">
-            Pricing and pass options may vary depending on your campus. Each university works 
-            with Elmo to define access options that suit their environment and community.
-          </p>
+            {/* RidePasses Card */}
+            <div className="bg-card rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                <Ticket className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-title mb-3">RidePasses</h3>
+              <p className="text-body text-muted-foreground">
+                Get unlimited unlocks and discounted rates with a weekly or monthly pass. 
+                Ideal for daily commuters.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Where to Find Pricing */}
-      <section className="section-padding-sm bg-muted/30">
+      <section className="section-padding-sm bg-background">
         <div className="container-narrow">
           <h2 className="text-headline-sm mb-6">Where to find pricing details</h2>
           <p className="text-body-large text-muted-foreground mb-4">
@@ -74,7 +63,7 @@ const Pricing = () => {
       </section>
 
       {/* Closing */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-muted/30">
         <div className="container-narrow text-center">
           <p className="text-body-large text-muted-foreground">
             Launching soon. Pricing details will be available in the app once we're live on your campus.
