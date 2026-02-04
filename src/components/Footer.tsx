@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook } from "lucide-react";
+import { Instagram, Facebook, Youtube } from "lucide-react";
 import logoElmo from "@/assets/logo-elmo.png";
 
 const footerLinks = {
@@ -22,6 +22,7 @@ const socialLinks = [
   { name: "Instagram", href: "https://instagram.com", icon: Instagram },
   { name: "Facebook", href: "https://facebook.com", icon: Facebook },
   { name: "TikTok", href: "https://tiktok.com", icon: "tiktok" },
+  { name: "YouTube", href: "https://youtube.com", icon: Youtube },
 ];
 
 const Footer = () => {
