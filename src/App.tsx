@@ -3,7 +3,8 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "@/components/ScrollToTop";
+
 import Index from "./pages/Index";
 import Students from "./pages/Students";
 import Universities from "./pages/Universities";
@@ -23,8 +24,11 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+
+      {/* IMPORTANT FIX FOR GITHUB PAGES */}
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <ScrollToTop />
+
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/students" element={<Students />} />
@@ -36,10 +40,10 @@ const App = () => (
           <Route path="/press" element={<Press />} />
           <Route path="/join-us" element={<JoinUs />} />
           <Route path="/investor-relations" element={<InvestorRelations />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+
     </TooltipProvider>
   </QueryClientProvider>
 );
