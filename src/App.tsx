@@ -19,33 +19,34 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
+const App = () => {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
 
-      {/* IMPORTANT FIX FOR GITHUB PAGES */}
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
-        <ScrollToTop />
+        {/* Custom domain + GitHub Pages safe */}
+        <BrowserRouter>
+          <ScrollToTop />
 
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/students" element={<Students />} />
-          <Route path="/universities" element={<Universities />} />
-          <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/press" element={<Press />} />
-          <Route path="/join-us" element={<JoinUs />} />
-          <Route path="/investor-relations" element={<InvestorRelations />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/students" element={<Students />} />
+            <Route path="/universities" element={<Universities />} />
+            <Route path="/how-it-works" element={<HowItWorks />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/press" element={<Press />} />
+            <Route path="/join-us" element={<JoinUs />} />
+            <Route path="/investor-relations" element={<InvestorRelations />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;
