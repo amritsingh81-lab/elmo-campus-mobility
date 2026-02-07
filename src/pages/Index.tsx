@@ -7,10 +7,11 @@ import StepCard from "@/components/StepCard";
 import PathwayCard from "@/components/PathwayCard";
 import heroBackground1 from "@/assets/hero-background.jpg";
 import heroBackgroundIndia from "@/assets/hero-background-india.jpg";
+import heroElmoScooter from "@/assets/hero-elmo-scooter.jpg";
 import studentsIllustration from "@/assets/students-illustration.jpg";
 import universitiesIllustration from "@/assets/universities-illustration.jpg";
 
-const heroImages = [heroBackground1, heroBackgroundIndia];
+const heroImages = [heroBackground1, heroBackgroundIndia, heroElmoScooter];
 
 const Index = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
