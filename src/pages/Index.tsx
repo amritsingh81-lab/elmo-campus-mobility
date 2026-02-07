@@ -1,27 +1,64 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Leaf, Shield, Building2, Clock } from "lucide-react";
+import { useState, useEffect } from "react";
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
 import StepCard from "@/components/StepCard";
 import PathwayCard from "@/components/PathwayCard";
-import heroBackground from "@/assets/hero-background.jpg";
+import heroBackground1 from "@/assets/hero-background.jpg";
+import heroBackgroundIndia from "@/assets/hero-background-india.jpg";
 import studentsIllustration from "@/assets/students-illustration.jpg";
 import universitiesIllustration from "@/assets/universities-illustration.jpg";
 
+const heroImages = [heroBackground1, heroBackgroundIndia];
+
 const Index = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
+    }, 6000); // Change image every 6 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <Layout>
-      {/* Hero Section - Full Bleed Background */}
-      <section 
-        className="relative min-h-[90vh] flex items-center"
-        style={{
-          backgroundImage: `url(${heroBackground})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
+      {/* Hero Section - Full Bleed Background with Crossfade */}
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+        {/* Background images with crossfade */}
+        {heroImages.map((image, index) => (
+          <div
+            key={index}
+            className="absolute inset-0 transition-opacity duration-1000 ease-in-out"
+            style={{
+              backgroundImage: `url(${image})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              opacity: currentImageIndex === index ? 1 : 0,
+            }}
+          />
+        ))}
+        
         {/* Dark overlay for text readability */}
         <div className="absolute inset-0 bg-black/40" />
+        
+        {/* Slide indicators */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+          {heroImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentImageIndex(index)}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                currentImageIndex === index 
+                  ? 'bg-white w-8' 
+                  : 'bg-white/50 hover:bg-white/70'
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
         
         <div className="container-wide section-padding relative z-10">
           <div className="max-w-2xl animate-slide-up">
