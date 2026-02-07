@@ -1,45 +1,44 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Smartphone, MapPin, Leaf, Shield, Building2, Clock } from "lucide-react";
+import { ArrowRight, Leaf, Shield, Building2, Clock } from "lucide-react";
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
 import StepCard from "@/components/StepCard";
 import PathwayCard from "@/components/PathwayCard";
-import heroIllustration from "@/assets/hero-illustration.jpg";
+import heroBackground from "@/assets/hero-background.jpg";
 import studentsIllustration from "@/assets/students-illustration.jpg";
 import universitiesIllustration from "@/assets/universities-illustration.jpg";
 
 const Index = () => {
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="hero-gradient">
-        <div className="container-wide section-padding">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="animate-slide-up">
-              <h1 className="text-display mb-6">
-                A simpler way to move around campus
-              </h1>
-              <p className="text-body-large mb-8 max-w-lg">
-                Shared electric scooters designed for university campuses in India. 
-                Open the app, find a scooter, and go.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <span className="btn-primary">
-                  Launching soon
-                </span>
-                <Link to="/how-it-works" className="btn-secondary">
-                  See how it works <ArrowRight size={18} />
-                </Link>
-              </div>
-            </div>
-            <div className="animate-slide-up delay-200">
-              <div className="illustration-container">
-                <img
-                  src={heroIllustration}
-                  alt="Student riding an electric scooter on campus"
-                  className="w-full h-auto"
-                />
-              </div>
+      {/* Hero Section - Full Bleed Background */}
+      <section 
+        className="relative min-h-[90vh] flex items-center"
+        style={{
+          backgroundImage: `url(${heroBackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/40" />
+        
+        <div className="container-wide section-padding relative z-10">
+          <div className="max-w-2xl animate-slide-up">
+            <h1 className="text-display text-white mb-6">
+              A simpler way to move around campus
+            </h1>
+            <p className="text-body-large text-white/90 mb-8 max-w-lg">
+              Shared electric scooters designed for university campuses in India. 
+              Open the app, find a scooter, and go.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <span className="btn-primary">
+                Launching soon
+              </span>
+              <Link to="/how-it-works" className="bg-white/20 backdrop-blur-sm text-white border border-white/30 font-medium py-3 px-6 rounded-full inline-flex items-center gap-2 hover:bg-white/30 transition-all">
+                See how it works <ArrowRight size={18} />
+              </Link>
             </div>
           </div>
         </div>
