@@ -61,8 +61,8 @@ const Index = () => {
           ))}
         </div>
         
-        <div className="container-wide section-padding relative z-10 flex items-center justify-start">
-          <div className="max-w-2xl animate-slide-up">
+        <div className="w-full px-8 md:px-16 lg:px-24 relative z-10">
+          <div className="max-w-2xl animate-slide-up text-left">
             <h1 className="text-display text-white mb-6">
               A simpler way to move around campus
             </h1>
