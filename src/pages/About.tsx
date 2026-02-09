@@ -16,9 +16,10 @@ const About = () => {
             About us
           </h1>
           <p className="text-body-large max-w-2xl mx-auto animate-slide-up delay-100">
-            Elmo operates shared electric scooters exclusively on university campuses in India. 
-            We work within controlled, private environments where safety, order, and sustainability 
-            can be maintained from the start.
+            Elmo is a European micro-mobility operator with operations in Sweden, Germany, 
+            and the United Kingdom. With deep experience building mobility solutions for modern 
+            cities, we understand the complexities of urban environments—and we bring that 
+            expertise to university campuses in India.
           </p>
         </div>
       </section>
@@ -40,14 +41,16 @@ const About = () => {
           <h2 className="text-headline mb-6">Why campuses</h2>
           <div className="space-y-6">
             <p className="text-body-large">
-              University campuses are self-contained environments with clear boundaries, 
-              defined pathways, and predictable travel patterns. Students move between 
-              hostels, classrooms, libraries, and dining halls in regular, repeatable ways.
+              Having operated across some of Europe's most challenging urban environments, 
+              we know what it takes to run safe and efficient shared mobility. University 
+              campuses offer a focused setting where that experience can be applied with 
+              even greater precision.
             </p>
             <p className="text-body text-muted-foreground">
-              This structure creates an opportunity to introduce shared mobility in a 
-              responsible manner—where usage can be monitored, behaviour can be guided, 
-              and operations can be managed carefully.
+              Campuses are self-contained environments with clear boundaries, defined pathways, 
+              and predictable travel patterns. This structure allows us to deliver a level of 
+              service and safety that draws on everything we've learned in cities like Stockholm, 
+              Berlin, and London.
             </p>
           </div>
 
@@ -91,15 +94,15 @@ const About = () => {
               <h2 className="text-headline mb-6">How Elmo approaches mobility</h2>
               <div className="space-y-6">
                 <p className="text-body-large">
-                  Elmo takes a campus-first approach. Rather than deploying broadly and 
-                  reacting to problems, we begin with controlled pilots in partnership 
-                  with university administration.
+                  We bring years of operational experience from European cities to every 
+                  campus we serve. Rather than deploying broadly and reacting to problems, 
+                  we begin with controlled pilots in partnership with university administration.
                 </p>
                 <p className="text-body text-muted-foreground">
                   Each deployment is tailored to the specific campus—its layout, its 
-                  policies, and its community. We define operating zones, establish 
-                  parking areas, and set clear usage guidelines before a single scooter 
-                  is placed.
+                  policies, and its community. The same rigour we apply to navigating 
+                  complex city regulations in Europe is brought to defining operating zones, 
+                  parking areas, and usage guidelines on campus.
                 </p>
                 <p className="text-body text-muted-foreground">
                   Elmo manages all operations directly. Maintenance, charging, redistribution, 
@@ -167,8 +170,8 @@ const About = () => {
       <section className="section-padding bg-card">
         <div className="container-narrow text-center">
           <p className="text-headline max-w-2xl mx-auto">
-            Elmo is focused on university campuses, with a long-term view toward 
-            building something lasting.
+            Built on European experience. Focused on Indian campuses. 
+            Committed to building something lasting.
           </p>
           <p className="text-body-large mt-6 text-muted-foreground">
             Launching soon on select campuses.
