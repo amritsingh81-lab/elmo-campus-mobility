@@ -70,7 +70,7 @@ const Contact = () => {
                   <Mail className="text-primary" size={20} />
                   <span className="font-medium">General inquiries</span>
                 </div>
-                <p className="text-muted-foreground">hello@elmomobility.in</p>
+                <p className="text-muted-foreground">amsi@elmomobility.se</p>
               </div>
             </div>
 
