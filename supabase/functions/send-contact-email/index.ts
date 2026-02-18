@@ -33,7 +33,7 @@ serve(async (req) => {
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "Elmo Contact Form <noreply@elmomobility.se>",
+        from: "Elmo Contact Form <noreply@contact.elmomobility.in>",
         to: ["amsi@elmomobility.se"],
         subject: `New contact from ${name}`,
         html: `
